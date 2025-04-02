@@ -3,92 +3,146 @@
     <title>Learning CSS</title>
     <style>
       h1 {
-        color: red;
+        color: #03045e;
+        text-align: center;
       }
 
-      p {
+      li {
+        display: inline;
+        padding: 5px;
+      }
+
+      li:hover {
+        background-color: white;
+      }
+
+      .paragraphs {
         margin: 32px;
+        padding: 20px;
+        background-color: white;
       }
 
       button {
+        border-radius: 12px;
+        font-size: 20px;
+        background-color: #0076b6a3;
+        margin: 15px auto;
       }
 
-      /* TODO: add styles for header  */
-      
-      /* TODO: add styles for footer  */
+      button:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+
+      header {
+        border-bottom: 1px solid black;
+      }
+
+      main {
+        border-bottom: 1px solid black;
+      }
+
+      footer {
+        margin: 15px;
+        padding-bottom: 10px;
+      }
 
       .paragraph-1 {
-        background-color: pink;
+        background-color: white;
+        margin: 15px 10px;
+        padding: 20px;
+      }
+
+      .center {
+        margin: auto;
+      }
+
+      #grad {
+        background-image: linear-gradient(to right, #e4eaee, #a0d4ee);
+      }
+
+      table {
+        height: 25%;
+        width: 50%;
+      }
+
+      .table-background {
+        background-color: white;
+      }
+
+      a {
+        text-decoration: none;
       }
     </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="grad" style="text-align: center">
     <header>
-      <h1 style="text-decoration: underline">I like cats!
-      </h1>
+      <nav>
+        <ul>
+       <li><a href="#"> HOME </a></li> 
+       <li><a href="#"> ABOUT </a></li> 
+        <li><a href="#"> GALLERY </a></li>
+      </ul>
+      </nav>
+      <h1 style="text-decoration: underline">I like cats!</h1>
     </header>
     <main>
-      <p class="paragraph-1" style="">
-        <em>Nice kitty!</em> Consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
+      <p class="paragraph-1" style="border: 3px solid #03045e">
+        <em>Nice kitty!</em> Consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
         sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
-        pulvinar <strong>mattis</strong> nunc. Enim blandit volutpat maecenas volutpat blandit
-        aliquam etiam.    
+        pulvinar <strong>mattis</strong> nunc. Enim blandit volutpat maecenas
+        volutpat blandit aliquam etiam.
       </p>
-    
-      <p style="">
+
+      <p class="paragraphs" style="border: 3px solid #03045e">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
-        sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
-        pulvinar mattis nunc. Enim blandit volutpat maecenas volutpat blandit
-        aliquam etiam. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.
-        Nulla aliquet enim tortor at auctor urna nunc id cursus. Gravida arcu ac
-        tortor dignissim convallis aenean. Nulla porttitor massa id neque aliquam
-        vestibulum morbi blandit cursus. Fringilla urna porttitor rhoncus dolor. A
-        erat nam at lectus urna duis.
+        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc
+        pulvinar sapien et ligula ullamcorper malesuada. Euismod quis viverra
+        nibh cras pulvinar mattis nunc. Enim blandit volutpat maecenas volutpat
+        blandit aliquam etiam. Sed blandit libero volutpat sed cras ornare arcu
+        dui vivamus. Nulla aliquet enim tortor at auctor urna nunc id cursus.
+        Gravida arcu ac tortor dignissim convallis aenean. Nulla porttitor massa
+        id neque aliquam vestibulum morbi blandit cursus. Fringilla urna
+        porttitor rhoncus dolor. A erat nam at lectus urna duis.
       </p>
-    
-      <p style="">
+
+      <p class="paragraphs" style="border: 3px solid #03045e">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
-        sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
-        pulvinar mattis nunc. Enim blandit volutpat maecenas volutpat blandit
-        aliquam etiam. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.
-        Nulla aliquet enim tortor at auctor urna nunc id cursus. Gravida arcu ac
-        tortor dignissim convallis aenean. Nulla porttitor massa id neque aliquam
-        vestibulum morbi blandit cursus. Fringilla urna porttitor rhoncus dolor. A
-        erat nam at lectus urna duis.
+        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc
+        pulvinar sapien et ligula ullamcorper malesuada. Euismod quis viverra
+        nibh cras pulvinar mattis nunc. Enim blandit volutpat maecenas volutpat
+        blandit aliquam etiam. Sed blandit libero volutpat sed cras ornare arcu
+        dui vivamus. Nulla aliquet enim tortor at auctor urna nunc id cursus.
+        Gravida arcu ac tortor dignissim convallis aenean. Nulla porttitor massa
+        id neque aliquam vestibulum morbi blandit cursus. Fringilla urna
+        porttitor rhoncus dolor. A erat nam at lectus urna duis.
       </p>
-    
-      <table>
+
+      <table class="center" style="border: 3px inset">
         <tr>
-          <th style="">item</th>
-          <th style="">price</th>
+          <th style="background-color: #0076b6a3">item</th>
+          <th style="background-color: #0076b6a3">price</th>
         </tr>
         <tr>
-          <td style="">hotwheels car</td>
-          <td style="">$4.99</td>
+          <td class="table-background" style="border: 3px inset">
+            hotwheels car
+          </td>
+          <td style="background-color: #0076b6a3">$4.99</td>
         </tr>
         <tr>
-          <td style="">
+          <td class="table-background" style="border: 3px inset">
             Cabbage patch doll
           </td>
-          <td style="">$1.99</td>
+          <td style="background-color: #0076b6a3">$1.99</td>
         </tr>
       </table>
-    
-      <button style="">Buy Now!</button>
+
+      <button style="border: 1px outset silver">Buy Now!</button>
     </main>
-  
-    <nav>
-      <a> HOME </a> |
-      <a> ABOUT </a> |
-      <a> GALLERY </a>
-    </nav>
-    
-    <footer>
-    </footer>
+
+    <footer><a href="#">Contact Us</a></footer>
 
     <script src="./script.js"></script>
   </body>
